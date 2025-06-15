@@ -20,9 +20,9 @@ You tweak parameter settings in the master org file to adjust the placement and 
 Unfortunately, there can still be unexpected side effects; however, I generally find this approach to be saner than working in MS Word.
 
 ## Why Org-mode?
-The principal advantage of Org-mode over \LaTeX is that Org-mode has more flexible support for working with tables than LaTeX.
+The principal advantage of Org-mode over LaTeX is that Org-mode has more flexible support for working with tables than LaTeX.
 Org-mode supports the use of interactive computing, although such a feature would unlikely ever be utilized in the grant application.
-The approach taken here could be replicated in \LaTeX.
+The approach taken here could be replicated in LaTeX.
 I have done so for those visitors who are already familiar with \LaTeX and have not yet explored org-mode.
 
 ## Requirements
@@ -103,20 +103,20 @@ For the Mac, you can install *texlive* via MacPorts or Homebrew.
 There is also a *MacTeX* binary that supports a drag-and-drop approach to installation.
 This software requires over 1 gigabyte of hard disk space.
 
-### Check which texlive distribution is called by Emacs
+### Check which *texlive* distribution is called by Emacs
 I have included the code required to point Emacs to the *texlive* distribution that you want to use.
-You should be aware that the R statistical package includes a stripped-down version of *textlive*.
-Depending on how your PATH is defined in your .bashrc or .zshrc file, the R version of *texlive* could be utilized by Emacs rather than the full version of *texlive*.
-The version that comes first in the PATH is the one that is used.
+You should be aware that the R statistical package includes a stripped-down version of *textlive* that is missing too many packages to bother using.
+Depending on how your PATH is defined in your `.bashrc` or `.zshrc file`, the R version of *texlive* could be utilized by Emacs rather than the full version of *texlive*.
+The file path that comes first in the PATH variable is the one that is used.
 
 
 ## Approach taken
 
 ### File configuration with header
 I developed a header that addresses my needs for using org-mode to prepare a NIH grant application.
-I provide on the first lines critical metadata that you will find yourself re-entering numerous times, like the application identifier number.
-My institution has its own application identifier number, so I include that too.
-Having this metadata available in such a handy way reduces the time spent looking them up again.
+I provide, on the first lines, critical metadata that you will find yourself re-entering numerous times, like the application identifier number.
+My institution has another application identifier number, so I have included that as well.
+Having this metadata available in such a handy way reduces the time spent looking it up again.
 Below these comments, I have an org-mode drawer that contains many lines of LaTeX statements.
 This section is equivalent to the preamble in a LaTeX document.
 I have included the templates for all the various kinds of documents that I have had to prepare.
@@ -138,25 +138,25 @@ Some articles have a PMC but not a PMCID because they were not funded by the NIH
 ### Extracting cited files
 
 The ideal approach would be to extract from a global.bib file the cited BibTeX entries and save these in a separate BibTeX file.
-There are several ways to perform this extraction.
+There are several methods for performing this extraction.
 
 - bibextract, a command-line tool.
 - BibDesk, another command-line tool.
 - bibfish
-- In Emacs when using org-ref for managing citations:  org-ref-extract-bibtex-entries or org-ref-extract-bibtex-to-file.
-- In emacs when using citar for managing citations: [citar-extract-bibtex-to-file](https://github.com/mlmbl/citar-extract-bibtex).
+- In Emacs, when using org-ref for managing citations:  org-ref-extract-bibtex-entries or org-ref-extract-bibtex-to-file.
+- In emacs, when using citar for managing citations: [citar-extract-bibtex-to-file](https://github.com/mlmbl/citar-extract-bibtex).
   
 
 
 
 ### Flatten references cited document
-The bibliography management is a problem when it comes to NIH grant applications because you are not allowed to have hyperlinks in the grant application. 
+Bibliography management is a problem when it comes to NIH grant applications because hyperlinks are not allowed in the grant application. 
 I am using *citar* to manage the bibliography. 
 Of course, you could use *org-ref* or *org-cite*. 
 All these packages will export hyperlinks in the bibliography in the PDF. 
 I attempted to address this issue by developing Elisp functions to remove these hyperlinks before exporting to PDF.
 
-I later found a much simpler solution: downloading and installing the Coherent PDF command line tool: [cpdf](https://community.coherentpdf.com/).
+I later found a much simpler solution: downloading and installing the Coherent PDF command-line tool, [cpdf](https://community.coherentpdf.com/).
 Then you can run the following command:
 
 ```bash
@@ -192,7 +192,7 @@ citar-extract-bibtex-to-file
 ### Handling of sections and subsections
 
 Org-mode and LaTeX tend to use enlarged font sizes to distinguish different levels of sections.
-They can also display numbers for this purpose but I find these to be a form of clutter.
+They can also display numbers for this purpose, but I find these to be a form of clutter.
 In an NIH grant, this is a waste of precious space.
 I utilize `\subsubsection*{}` headlines because the font is the same height as the font in the non-bold text.
 I use this at the top level.
@@ -208,7 +208,7 @@ You are better off making the text leaner by careful editing and freeing up a li
 ### Text wrapping of tables and figures
 
 The most challenging attachment is the Research Strategy, which contains text-wrapped images and the bibliography.
-In most document assembly systems, the bibliography is generated in conjunction with the main text, so it is unusual that these two items have to be uncoupled.
+In most document assembly systems, the bibliography is generated in conjunction with the main text; therefore, it is unusual for these two items to be uncoupled.
 This is handled by generating the Research Strategy and bibliography together in a single file and exporting them to a PDF.
 The PDF is opened in a PDF reader, and the research strategy pages are deleted to leave the bibliography, which is then saved to a separate PDF file.
 There may be a better way of handling this.
