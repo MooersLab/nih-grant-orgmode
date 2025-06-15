@@ -1,0 +1,165 @@
+# SoonerTrack Number: <128440>
+# Internal Applicant Identifier in Assist: <Mooers_128440>
+# ASSIST Application Identifier: <1957???>
+# <Title of Your Grant>
+
+#+Options: toc:nil author:nil \n:nil num:nil
+#+STARTUP: noindent overview
+#+cite_export: csl cell-numeric-titlecase.csl
+#+bibliography: "/Users/blaine/Documents/global.bib"
+
+:PREAMBLE:
+#+LaTeX_CLASS: article
+#+LaTeX_CLASS_OPTIONS: [11pt,letterpaper]
+#+LATEX_COMPILER: xelatex
+#+LaTeX_HEADER:\usepackage[letterpaper, total={7.5in, 9.7in}]{geometry}
+
+#+LaTeX_HEADER: \usepackage{booktabs}
+#+LaTeX_HEADER: \usepackage{graphicx}
+#+LaTeX_HEADER: \usepackage{xurl} % permit line breaks in urls
+#+LaTeX_HEADER: \usepackage[breaklinks=true]{hyperref}
+#+LaTeX_HEADER: \usepackage{datetime2}
+#+LaTeX_HEADER: \usepackage{amsmath,amssymb,amsfonts}
+# #+LaTeX_HEADER:\usepackage{breakcites} % allow citatation to wrap
+
+# Turn off page numbering globally
+#+LATEX_HEADER: \pagestyle{empty}
+
+# #+LaTeX_HEADER:\usepackage[utf8]{inputenc}
+#+LaTeX_HEADER:\usepackage{setspace} \doublespacing
+#+LaTeX_HEADER:\doublespacing % turn on doublespacing for the whole document.
+#+LATEX_HEADER:\usepackage{parskip} % add a blank line between paragraphs upon export to PDF.
+#+LaTeX_HEADER:\usepackage[T1]{fontenc}
+#+LaTeX_HEADER:\usepackage{authblk}
+#+LaTeX_HEADER:\usepackage[labelfont=bf]{caption}
+#+LATEX_HEADER: \usepackage{wrapfig}
+
+# Reduce the space between bibliographic items.
+#+latex_header: \setlength\bibitemsep{\baselineskip}
+
+#+LaTeX_HEADER:\DeclareCaptionType{equ}[][]
+#+LaTeX_HEADER:% Create a code float environment to enclosed minted environments so that captions can be added to code listings.
+#+LaTeX_HEADER:\newenvironment{code}{\captionsetup{type=listing}}{}
+
+
+#+LATEX_HEADER: \usepackage{textcomp}
+#+LATEX_HEADER: \usepackage{fontspec} % Required to use true Arial font. 
+#+LATEX_HEADER: \setmainfont{Arial}
+
+#+LaTeX_HEADER: \setlength{\parindent}{0pt} % Remove automatic indent of paragraphs.
+#+LaTeX_HEADER: \usepackage{pdfpages}
+# #+LaTeX_HEADER: \AtBeginDocument{\thispagestyle{empty}\pagenumbering{arabic}}
+
+#+LATEX_HEADER: \usepackage{enumitem}
+
+#+latex_header: \hypersetup{allbordercolors={}, pdfborder={0 0 0}}
+#+LATEX_HEADER: \usepackage{natbib}
+#+LATEX_HEADER: \renewcommand{\refname}{}
+#+LATEX_HEADER: \renewcommand{\bibsection}{}
+:END:
+
+#+Latex:\begin{singlespace}
+\subsubsection*{Research Strategy}
+:PROPERTIES:
+:CUSTOM_ID: research-strategy
+:END:
+
+\paragraph*{Significance.}
+:PROPERTIES:
+:CUSTOM_ID: significance
+:END:
+
+Blah blah blah!!! Blah blah blah!!! Blah blah blah!!! Blah blah blah!!!Blah blah blah!!!
+Blah blah blah!!! Blah blah blah!!! Blah blah blah!!! Blah blah blah!!!Blah blah blah!!!
+Blah blah blah!!! Blah blah blah!!! Blah blah blah!!! Blah blah blah!!!Blah blah blah!!!
+Blah blah blah!!! Blah blah blah!!! Blah blah blah!!! Blah blah blah!!!Blah blah blah!!!
+Blah blah blah!!! Blah blah blah!!! Blah blah blah!!! Blah blah blah!!!Blah blah blah!!!
+Blah blah blah!!! Blah blah blah!!! Blah blah blah!!! Blah blah blah!!!Blah blah blah!!!
+Blah blah blah!!! Blah blah blah!!! Blah blah blah!!! Blah blah blah!!!Blah blah blah!!!
+Blah blah blah!!! Blah blah blah!!! Blah blah blah!!! Blah blah blah!!!Blah blah blah!!!
+Blah blah blah!!! Blah blah blah!!! Blah blah blah!!! Blah blah blah!!!Blah blah blah!!!
+Blah blah blah!!! Blah blah blah!!! Blah blah blah!!! Blah blah blah!!!Blah blah blah!!!
+
+
+
+
+\begin{wraptable}{r}{10cm}
+\caption{Example of LaTeX table that has been text wrapped.}
+\begin{tabular}{lccccc}
+%\hline
+ {$\begin{array}{l} \\ \text{ Design type }\end{array}$}   & \multicolumn{5}{c}{ Number of factors } \\
+\cline { 2 - 6 }       &     3 & 4 & 5 & 6 & 7  \\
+\hline
+3-level Full Factorial  &    27 & 81 & 243 & 729 & 2187  \\
+Central Composite Design &   15 & 25 &  27 & 45 & 79  \\
+Definitive Screening Design &  9 &  9 &  13 & 13 & 17  \\
+\hline
+\end{tabular}
+\end{wraptable}
+
+Blah blah blah!!! Blah blah blah!!! Blah blah blah!!! Blah blah blah!!!Blah blah blah!!!
+Blah blah blah!!! Blah blah blah!!! Blah blah blah!!! Blah blah blah!!!Blah blah blah!!!
+Blah blah blah!!! Blah blah blah!!! Blah blah blah!!! Blah blah blah!!!Blah blah blah!!!
+Blah blah blah!!! Blah blah blah!!! Blah blah blah!!! Blah blah blah!!!Blah blah blah!!!
+Blah blah blah!!! Blah blah blah!!! Blah blah blah!!! Blah blah blah!!!Blah blah blah!!!
+Blah blah blah!!! Blah blah blah!!! Blah blah blah!!! Blah blah blah!!!Blah blah blah!!!
+Blah blah blah!!! Blah blah blah!!! Blah blah blah!!! Blah blah blah!!!Blah blah blah!!!
+Blah blah blah!!! Blah blah blah!!! Blah blah blah!!! Blah blah blah!!!Blah blah blah!!!
+Blah blah blah!!! Blah blah blah!!! Blah blah blah!!! Blah blah blah!!!Blah blah blah!!!
+Blah blah blah!!! Blah blah blah!!! Blah blah blah!!! Blah blah blah!!!Blah blah blah!!!
+
+
+\begin{wrapfigure}{r}{0.55\textwidth}
+\begin{table}[htp]
+\label{tab:designParameters}
+\caption{Example of LaTeX table that has been text wrapped in the wrapfigure environment.}
+\begin{tabular}{l l}
+\hline
+Parameter & Values\\ [1ex]
+\hline
+Optimality criterion &  J or D \\[1ex]
+Number of factors &  1-5\\[1ex]
+Number of blocks & 2-6 \\[1ex]
+Tray sizes & 9, 15, 24, 48, 72, 96 \\[1ex]
+Total number of samples & 9, 15, 30, 45, 60, 75, 90, 24, 48, 72, 96 \\ [1ex]
+\hline
+\end{tabular}
+\end{table}
+\end{wrapfigure}
+
+
+Blah blah blah!!! Blah blah blah!!! Blah blah blah!!! Blah blah blah!!!Blah blah blah!!!
+Blah blah blah!!! Blah blah blah!!! Blah blah blah!!! Blah blah blah!!!Blah blah blah!!!
+Blah blah blah!!! Blah blah blah!!! Blah blah blah!!! Blah blah blah!!!Blah blah blah!!!
+Blah blah blah!!! Blah blah blah!!! Blah blah blah!!! Blah blah blah!!!Blah blah blah!!!
+Blah blah blah!!! Blah blah blah!!! Blah blah blah!!! Blah blah blah!!!Blah blah blah!!!
+Blah blah blah!!! Blah blah blah!!! Blah blah blah!!! Blah blah blah!!!Blah blah blah!!!
+Blah blah blah!!! Blah blah blah!!! Blah blah blah!!! Blah blah blah!!!Blah blah blah!!!
+Blah blah blah!!! Blah blah blah!!! Blah blah blah!!! Blah blah blah!!!Blah blah blah!!!
+Blah blah blah!!! Blah blah blah!!! Blah blah blah!!! Blah blah blah!!!Blah blah blah!!!
+Blah blah blah!!! Blah blah blah!!! Blah blah blah!!! Blah blah blah!!!Blah blah blah!!!
+
+
+#+NAME: fig:Inputs
+\begin{wrapfigure}{r}{0.52\textwidth} % Example figure with text wrapping around it. The space reserved for the figure is 52% of the text area defined above.
+\includegraphics[scale=0.28]{~/3244ACA2023/3244ov/Figures/Inputs.png} % Include figure with path relative to this file's location, and scale it to 28% of its full size.
+\caption{\normalsize Input tab in workbook.}
+\end{wrapfigure}
+
+Blah blah blah!!! Blah blah blah!!! Blah blah blah!!! Blah blah blah!!!Blah blah blah!!!
+Blah blah blah!!! Blah blah blah!!! Blah blah blah!!! Blah blah blah!!!Blah blah blah!!!
+Blah blah blah!!! Blah blah blah!!! Blah blah blah!!! Blah blah blah!!!Blah blah blah!!!
+Blah blah blah!!! Blah blah blah!!! Blah blah blah!!! Blah blah blah!!!Blah blah blah!!!
+Blah blah blah!!! Blah blah blah!!! Blah blah blah!!! Blah blah blah!!!Blah blah blah!!!
+Blah blah blah!!! Blah blah blah!!! Blah blah blah!!! Blah blah blah!!!Blah blah blah!!!
+Blah blah blah!!! Blah blah blah!!! Blah blah blah!!! Blah blah blah!!!Blah blah blah!!!
+Blah blah blah!!! Blah blah blah!!! Blah blah blah!!! Blah blah blah!!!Blah blah blah!!!
+Blah blah blah!!! Blah blah blah!!! Blah blah blah!!! Blah blah blah!!!Blah blah blah!!!
+Blah blah blah!!! Blah blah blah!!! Blah blah blah!!! Blah blah blah!!!Blah blah blah!!!
+
+
+# How to insert the bibilography starting at the top of a new page
+\newpage
+\subsubsection*{References Cited}
+#+print_bibliography:
+
