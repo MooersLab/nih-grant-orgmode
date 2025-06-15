@@ -19,6 +19,12 @@ This is not a silver bullet, but it is less frustrating to work with than manual
 You tweak parameter settings in the master org file to adjust the placement and space allocated for a text-wrapped figure.
 Unfortunately, there can still be unexpected side effects; however, I generally find this approach to be saner than working in MS Word.
 
+## Components
+
+- nih.org: org-mode template file with examples of tables and figures for the Research Strategy. Delete these components for other NIH grant documents or use the yasnippet snippet below.
+- nih-header: yasnippet snippit that inserts the required header information.
+
+
 ## Why Org-mode?
 The principal advantage of Org-mode over LaTeX is that Org-mode has more flexible support for working with tables than LaTeX.
 Org-mode supports the use of interactive computing, although such a feature would unlikely ever be utilized in the grant application.
