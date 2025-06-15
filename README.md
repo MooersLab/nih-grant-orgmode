@@ -21,8 +21,8 @@ Unfortunately, there can still be unexpected side effects; however, I generally 
 
 ## Components
 
-- nih.org: org-mode template file with examples of tables and figures for the Research Strategy. Delete these components for other NIH grant documents or use the yasnippet snippet below.
-- nih-header: yasnippet snippit that inserts the required header information.
+- **nih.org**: org-mode template file with examples of tables and figures for the Research Strategy. Delete these components for other NIH grant documents or use the yasnippet snippet below.
+- **nih-header**: yasnippet snippet that inserts the required header information.
 
 
 ## Why Org-mode?
