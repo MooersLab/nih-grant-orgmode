@@ -1,0 +1,74 @@
+# -*- mode: snippet -*-
+# name: nih-header
+# key: nih
+# --
+# SoonerTrack Number: <128440>
+# Internal Applicant Identifier in Assist: <Mooers_128440>
+# ASSIST Application Identifier: <1957???>
+# <Title of Your Grant>
+
+#+Options: toc:nil author:nil \n:nil num:nil
+#+STARTUP: noindent overview
+#+cite_export: csl cell-numeric-titlecase.csl
+#+bibliography: "/Users/blaine/Documents/global.bib"
+
+:PREAMBLE:
+#+LaTeX_CLASS: article
+#+LaTeX_CLASS_OPTIONS: [11pt,letterpaper]
+#+LATEX_COMPILER: xelatex
+#+LaTeX_HEADER:\usepackage[letterpaper, total={7.5in, 9.7in}]{geometry}
+
+#+LaTeX_HEADER: \usepackage{booktabs}
+#+LaTeX_HEADER: \usepackage{graphicx}
+#+LaTeX_HEADER: \usepackage{xurl} % permit line breaks in urls
+#+LaTeX_HEADER: \usepackage[breaklinks=true]{hyperref}
+#+LaTeX_HEADER: \usepackage{datetime2}
+#+LaTeX_HEADER: \usepackage{amsmath,amssymb,amsfonts}
+# #+LaTeX_HEADER:\usepackage{breakcites} % allow citatation to wrap
+
+# Turn off page numbering globally
+#+LATEX_HEADER: \pagestyle{empty}
+
+# #+LaTeX_HEADER:\usepackage[utf8]{inputenc}
+#+LaTeX_HEADER:\usepackage{setspace} \doublespacing
+#+LaTeX_HEADER:\doublespacing % turn on doublespacing for the whole document.
+#+LATEX_HEADER:\usepackage{parskip} % add a blank line between paragraphs upon export to PDF.
+#+LaTeX_HEADER:\usepackage[T1]{fontenc}
+#+LaTeX_HEADER:\usepackage{authblk}
+#+LaTeX_HEADER:\usepackage[labelfont=bf]{caption}
+#+LATEX_HEADER: \usepackage{wrapfig}
+
+#+latex_header: \setlength\bibitemsep{\baselineskip}
+
+#+LaTeX_HEADER:\DeclareCaptionType{equ}[][]
+#+LaTeX_HEADER:% Create a code float environment to enclosed minted environments so that captions can be added to code listings.
+#+LaTeX_HEADER:\newenvironment{code}{\captionsetup{type=listing}}{}
+#+LaTeX_HEADER:% Approximate Arial font. To save ink by returning to a sans serif font, comment the next two lines.
+
+#+LATEX_HEADER: \usepackage{textcomp}
+#+LATEX_HEADER: \usepackage{fontspec}
+#+LATEX_HEADER: \setmainfont{Arial}
+#+LaTeX_HEADER: \setlength{\parindent}{0pt} % Remove automatic indent of paragraphs.
+#+LaTeX_HEADER: \usepackage{pdfpages}
+#+LaTeX_HEADER: \AtBeginDocument{\thispagestyle{empty}\pagenumbering{arabic}}
+
+#+LATEX_HEADER: \usepackage{enumitem}
+
+#+latex_header: \hypersetup{allbordercolors={}, pdfborder={0 0 0}}
+#+LATEX_HEADER: \usepackage{natbib}
+#+LATEX_HEADER: \renewcommand{\refname}{}
+#+LATEX_HEADER: \renewcommand{\bibsection}{}
+:END:
+
+#+Latex:\begin{singlespace}
+\subsubsection*{Research Strategy}
+:PROPERTIES:
+:CUSTOM_ID: research-strategy
+:END:
+
+\paragraph*{Significance.}
+:PROPERTIES:
+:CUSTOM_ID: significance
+:END:
+
+
