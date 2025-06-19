@@ -225,7 +225,7 @@ There may be a better way of handling this.
 |:-----------|:------------------------------------------------------------------------------------------------------------------------------------------|:--------------------|
 | Version 0.1 |   Added badges, funding, and update table.  Initial commit.                                                                                                                | 6/14/2025  |
 | Version 0.1.1 |  Edits of the README.md to improve clarity.                                                                                                              | 6/15/2025  |
- Version 0.1.2 |  Updated bash script in README.md.                                                                                                              | 6/18/2025  |
+ Version 0.1.2 |  Updated bash function flatpdf () in README.md.                                                                                                              | 6/18/2025  |
 
 
 ## Sources of funding
