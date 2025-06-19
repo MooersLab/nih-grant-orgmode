@@ -1,4 +1,4 @@
-![Version](https://img.shields.io/static/v1?label=nih-grant-orgmode&message=0.1.1&color=brightcolor)
+![Version](https://img.shields.io/static/v1?label=nih-grant-orgmode&message=0.1.2&color=brightcolor)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 # NIH grant templates in org-mode
@@ -225,6 +225,7 @@ There may be a better way of handling this.
 |:-----------|:------------------------------------------------------------------------------------------------------------------------------------------|:--------------------|
 | Version 0.1 |   Added badges, funding, and update table.  Initial commit.                                                                                                                | 6/14/2025  |
 | Version 0.1.1 |  Edits of the README.md to improve clarity.                                                                                                              | 6/15/2025  |
+ Version 0.1.1 |  Updated bash script in README.md.                                                                                                              | 6/18/2025  |
 
 
 ## Sources of funding
