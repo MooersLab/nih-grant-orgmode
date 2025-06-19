@@ -183,7 +183,7 @@ elif [ $# -gt 1 ]; then
    echo "Usage: flatpdf <input filestem>"
    return 2
 fi
-cpdf -replace-dict-entry /URI ${1:input}.pdf -replace-dict-entry-value '""' -o ${1:input}Flattened.pdf
+cpdf -replace-dict-entry /URI "$1.pdf" -replace-dict-entry-value '""' -o "${1}Flattened.pdf"
 }
 ```
 
